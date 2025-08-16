@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NebulaX • Coming Soon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin:0;
+      font-family:'Orbitron', sans-serif;
+      background:#0a0d1b;
+      color:#e0e7ff;
+      overflow:hidden;
+    }
+    /* Stars background */
+    .stars {
+      position:fixed; inset:0; z-index:-1;
+      background:radial-gradient(circle at 20% 20%,rgba(255,255,255,.8) 1px,transparent 1px),
+                 radial-gradient(circle at 80% 40%,rgba(255,255,255,.6) 1px,transparent 1px),
+                 radial-gradient(circle at 60% 80%,rgba(255,255,255,.4) 1px,transparent 1px);
+      background-size:200px 200px,300px 300px,400px 400px;
+      animation: drift 120s linear infinite;
+    }
+    @keyframes drift { from{background-position:0 0,0 0,0 0;} to{background-position:-10000px 5000px,-8000px 2000px,-6000px 4000px;} }
+
+    .panel {
+      max-width:700px;
+      margin:60px auto;
+      background:rgba(20,25,50,.85);
+      border:1px solid #1e2747;
+      border-radius:1rem;
+      padding:2rem;
+      text-align:center;
+      box-shadow:0 0 20px rgba(0,240,255,.25), inset 0 0 10px rgba(255,0,230,.1);
+      backdrop-filter:blur(8px);
+    }
+    .logo {
+      width:80px;
+      height:80px;
+      margin-bottom:1rem;
+      filter:drop-shadow(0 0 20px #00f0ff);
+    }
+    h1 {
+      font-size:2.5rem;
+      color:#00f0ff;
+      margin:0 0 1rem;
+      text-shadow:0 0 8px #00f0ff,0 0 12px #ff00e6;
+    }
+    p {
+      font-size:1rem;
+      line-height:1.6;
+      margin-bottom:1rem;
+      color:#c7d2fe;
+    }
+    .highlight { color:#ffea00; text-shadow:0 0 6px #ffea00,0 0 12px #ff00e6; font-weight:600; }
+    .cta {
+      display:inline-block;
+      margin-top:1rem;
+      padding:.75rem 1.5rem;
+      border:1px solid #00f0ff;
+      border-radius:999px;
+      color:#00f0ff;
+      font-weight:600;
+      text-decoration:none;
+      transition:.25s;
+    }
+    .cta:hover {
+      background:rgba(0,240,255,.1);
+      box-shadow:0 0 12px #00f0ff,0 0 20px #ff00e6;
+    }
+    footer {
+      margin-top:1.5rem;
+      font-size:.8rem;
+      color:#888;
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="panel">
+<a href="index.html"><img src="NebulaX-logo.png" alt="NebulaX Logo" class="logo" /></a>
+    <h1>NebulaX</h1>
+    <p>A <span class="highlight">futuristic Solana trading hub</span> designed for <span class="highlight">fun & speed</span>.  
+       Not just another dashboard — NebulaX brings <span class="highlight">gaming vibes</span> to memecoin trading.</p>
+    <p>- <strong>Fast & Fun</strong> trading with a gaming-like UI.<br/>
+       - <strong>Customizable</strong> panels & user settings coming soon.<br/>
+       - <strong>$NEBX Tokenomics</strong> built for rewards & community building.<br/>
+       - <strong>Earn</strong> through staking, tiers & community perks.</p>
+    <p class="highlight">Be part of the new wave of traders.</p>
+    <a href="https://x.com/NXNebulaX" class="cta">Follow the Journey</a>
+    <footer>v0.1 • Coming Soon • © NebulaX</footer>
+  </div>
+</body>
+</html>
+
